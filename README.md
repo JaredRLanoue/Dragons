@@ -35,6 +35,8 @@ Our software application is a group organization software, it will be able to cr
 
 ### Katie - written by Jared
 Katie is a recent graduate in her mid-20s who has just moved to a new city and is looking for groups to join for professional networking and career development, as well as for creating long-lasting friendships. She is highly motivated, driven, and is looking for groups that will support her professional growth and provide her with a sense of community. As a tech-savvy individual, Katie is looking for a simple-to-use software solution that will help her efficiently find and join the right groups for her professional development and social needs.
+Rachel- written by Abdi Issack
+Rachel is a college student in her early 20s who is passionate about environmental issues and activism. She is looking for a way to connect with like-minded individuals and attend events that support her cause. She is busy with her studies and extracurricular activities, so she is looking for a software solution that will help her find and attend events without having to spend too much time searching.
 
 ## User Stories
 
@@ -44,9 +46,8 @@ Katie is looking to network and build her professional connections in her new ci
 ### User Story #2
 
 
-### User Story #3
-
-
+### User Story #3- written by Abdi Issack
+Rachel is interested in attending a local environmental activism event, but she is unable to find any events that fit her schedule. She decides to use the group organization software to search for events that fit her schedule. She finds an environmental protest happening next weekend and uses the software to request a spot in the event. The software provides Rachel with a confirmation and adds the event to her schedule. On the day of the protest, Rachel attends the event and meets several individuals who share her passion for environmental activism. She is grateful for the group organization software, as it has helped her easily find and attend events that support her cause and allowed her to connect with like-minded individuals.
 ### User Story #4
 
 
