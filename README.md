@@ -35,7 +35,8 @@ Our software application is a group organization software, it will be able to cr
 
 ### Katie - written by Jared
 Katie is a recent graduate in her mid-20s who has just moved to a new city and is looking for groups to join for professional networking and career development, as well as for creating long-lasting friendships. She is highly motivated, driven, and is looking for groups that will support her professional growth and provide her with a sense of community. As a tech-savvy individual, Katie is looking for a simple-to-use software solution that will help her efficiently find and join the right groups for her professional development and social needs.
-Rachel- written by Abdi Issack
+
+### Rachel- written by Abdi Issack
 Rachel is a college student in her early 20s who is passionate about environmental issues and activism. She is looking for a way to connect with like-minded individuals and attend events that support her cause. She is busy with her studies and extracurricular activities, so she is looking for a software solution that will help her find and attend events without having to spend too much time searching.
 
 ## Jake- written by Mario
@@ -54,6 +55,10 @@ Jake has been using the group organization software for several months now, and 
 
 ### User Story #3- written by Abdi Issack
 Rachel is interested in attending a local environmental activism event, but she is unable to find any events that fit her schedule. She decides to use the group organization software to search for events that fit her schedule. She finds an environmental protest happening next weekend and uses the software to request a spot in the event. The software provides Rachel with a confirmation and adds the event to her schedule. On the day of the protest, Rachel attends the event and meets several individuals who share her passion for environmental activism. She is grateful for the group organization software, as it has helped her easily find and attend events that support her cause and allowed her to connect with like-minded individuals.
+
+Rachel has been actively participating in environmental activism events for a while now, and she has made some close friends who share her passion. However, they all have different schedules, and it's become difficult to coordinate with them and attend events together. Rachel decides to use the group organization software to create a group of her activist friends. She invites them to join the group, and they all accept. They use the group to discuss upcoming events, share information and resources, and coordinate their schedules. With the help of the group organization software, Rachel and her friends are now able to attend events together and make a greater impact. They are grateful for the software as it has made it much easier for them to connect and take action on the issues they care about.
+
+
 ### User Story #4
 
 
