@@ -35,6 +35,8 @@ Our software application is a group organization software, it will be able to cr
 
 ### Katie - written by Jared
 Katie is a recent graduate in her mid-20s who has just moved to a new city and is looking for groups to join for professional networking and career development, as well as for creating long-lasting friendships. She is highly motivated, driven, and is looking for groups that will support her professional growth and provide her with a sense of community. As a tech-savvy individual, Katie is looking for a simple-to-use software solution that will help her efficiently find and join the right groups for her professional development and social needs.
+Rachel- written by Abdi Issack
+Rachel is a college student in her early 20s who is passionate about environmental issues and activism. She is looking for a way to connect with like-minded individuals and attend events that support her cause. She is busy with her studies and extracurricular activities, so she is looking for a software solution that will help her find and attend events without having to spend too much time searching.
 
 ## Jake- written by Mario
 Jake is a small business owner in his mid-40s who is always on the lookout for opportunities to network and grow his business. He is looking for an efficient way to connect with other small business owners and attend events that can help him expand his network and improve his business skills. He is busy and does not have a lot of time to spend searching for events and organizing his schedule, so he is looking for a software solution that will help him streamline the process.
@@ -48,9 +50,8 @@ Katie is looking to network and build her professional connections in her new ci
 Jake is interested in attending a local business networking event, but he is unable to find any events that fit his schedule. He decides to use the group organization software to search for events that fit his schedule. He finds a networking event happening next week and uses the software to request a spot in the event. The software provides Jake with a confirmation and adds the event to his schedule. On the day of the event, Jake attends the networking event and meets several potential clients and business partners. He is grateful for the group organization software, as it has helped him easily find and attend events that have allowed him to grow his business network.
 
 
-### User Story #3
-
-
+### User Story #3- written by Abdi Issack
+Rachel is interested in attending a local environmental activism event, but she is unable to find any events that fit her schedule. She decides to use the group organization software to search for events that fit her schedule. She finds an environmental protest happening next weekend and uses the software to request a spot in the event. The software provides Rachel with a confirmation and adds the event to her schedule. On the day of the protest, Rachel attends the event and meets several individuals who share her passion for environmental activism. She is grateful for the group organization software, as it has helped her easily find and attend events that support her cause and allowed her to connect with like-minded individuals.
 ### User Story #4
 
 
