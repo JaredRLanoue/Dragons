@@ -63,6 +63,25 @@ Rachel is interested in attending a local environmental activism event, but she 
 
 ## Requirements
 
+- User registration and authentication: The software should allow users to register and log in to the platform. This is to ensure that the groups and events are accessible only to verified users.
+
+- Group creation and management: The software should allow group organizers to create and manage their groups. The organizers should be able to set the group name, description, members, events, and schedule.
+
+- Event creation and management: The software should allow group organizers to create and manage events. The organizers should be able to set the event name, description, date, time, and location.
+
+- Event search and filtering: The software should allow users to search and filter events based on their interests and schedules. Users should be able to view the events, see the details, and request to join.
+
+- Group communication: The software should allow group members to communicate with each other and the organizers. This can be done through in-app messaging or email.
+
+- Schedule management: The software should allow users to view their schedules and manage their events. This includes viewing the event details, time, and location.
+
+- User profile: The software should allow users to create and edit their profiles. This includes the ability to set their interests, skills, and goals.
+
+- Event reminders: The software should send reminders to users about upcoming events. This can be done through in-app notifications, email, or SMS.
+
+- Responsive design: The software should have a responsive design that is optimized for different devices and screen sizes.
+
+- Data security: The software should have proper data security measures in place to protect the user information. This includes encryption and secure server storage.
 
 ### Functional
 
