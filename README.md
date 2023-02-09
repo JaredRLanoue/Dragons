@@ -13,6 +13,23 @@ Our software application is a group organization software, it will be able to cr
 
 ## Stakeholders and their Interests
 
+### Users
+- Easily find and join groups that align with their interests and goals
+- Quick and simple to use software to meet their needs
+- Ability to create long-lasting friendships through the service
+- Good user interface design
+
+### Group Organizers
+- Ability to create and manage groups with ease
+- Easy to reach and communicate with members
+- Manageable and low-cost software to run the group
+
+### The Software Developer and Maintainer
+- Manageable software
+- Clean and easy to read code
+- Low operating costs
+- Easy to deploy and change
+- Little to no downtime
 
 ## Personas
 
@@ -29,7 +46,9 @@ Katie is looking to network and build her professional connections in her new ci
 
 ### User Story #3
 
+
 ### User Story #4
+
 
 ### User Story #5
 
