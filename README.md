@@ -108,7 +108,7 @@ Dan is looking for new events to put on during the summer for the parks departme
 
 - Group search and joining: Users should be able to search for groups based on their interests and join them.
 
--Event viewing and requesting: Users should be able to view available events and request to attend them.
+- Event viewing and requesting: Users should be able to view available events and request to attend them.
 
 - Group creation and management: Group organizers should be able to create and manage groups, including setting up event schedules and estimating group sizes.
 
@@ -117,7 +117,7 @@ Dan is looking for new events to put on during the summer for the parks departme
 - Event scheduling and reminders: The application should provide users with a calendar view of their schedule, including reminders for upcoming events.
 
 - User communication: The application should provide a platform for users to communicate with each other and with group organizers.
--
+
 ### Non-Functional
 
 - User interface design: The application should have a user-friendly and visually appealing interface.
@@ -132,6 +132,6 @@ Dan is looking for new events to put on during the summer for the parks departme
 
 - Integration: The application should be able to integrate with other relevant tools and platforms, such as calendars and messaging systems.
 
--  Mobile accessibility: The application should be accessible on mobile devices as well as desktop computers
+- Mobile accessibility: The application should be accessible on mobile devices as well as desktop computers
 
 ### Non-Requirements
