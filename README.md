@@ -104,8 +104,34 @@ Dan is looking for new events to put on during the summer for the parks departme
 
 ### Functional
 
+- User registration and login: Users should be able to create an account and log in to the application.
 
+- Group search and joining: Users should be able to search for groups based on their interests and join them.
+
+-Event viewing and requesting: Users should be able to view available events and request to attend them.
+
+- Group creation and management: Group organizers should be able to create and manage groups, including setting up event schedules and estimating group sizes.
+
+- User profile management: Users should be able to update their profile information, including interests and availability
+
+- Event scheduling and reminders: The application should provide users with a calendar view of their schedule, including reminders for upcoming events.
+
+- User communication: The application should provide a platform for users to communicate with each other and with group organizers.
+-
 ### Non-Functional
 
+- User interface design: The application should have a user-friendly and visually appealing interface.
+
+- Performance: The application should be able to handle a large number of users and events without slowing down or crashing.
+
+- Security: The application should have appropriate security measures in place to protect users' personal information and prevent unauthorized access.
+
+- Scalability: The application should be able to accommodate growth in the number of users and groups.
+
+- Support: The application should provide users with the ability to report issues and receive support from the development team.
+
+- Integration: The application should be able to integrate with other relevant tools and platforms, such as calendars and messaging systems.
+
+-  Mobile accessibility: The application should be accessible on mobile devices as well as desktop computers
 
 ### Non-Requirements
