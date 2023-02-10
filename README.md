@@ -45,6 +45,9 @@ Jake is a small business owner in his mid-40s who is always on the lookout for o
 ### Dan – Program Manager:
 Dan is  38 and is the program manager at a parks department for his local town Sartell MN. Dan is innovative and always looking for creative solutions. Dan is the community organizer for events in the parks department, the community participation rate has been in the top 10% of the midwest for his metropolitan region. Dan wants to provide easily visual information about his community events and continue to expand his outreach. Dan is not the most experienced with technology but he works together with the parks department on their website design and service care.
 
+### Matt - written by Austin
+Matt is a college student and loves to play video games in his free time. He will play by himself but he prefers to play with friends. However, his friends are not always able to play with him and he wants to start playing more so he can get better at the game. He is looking for a way to find other players to play with when his friends aren’t available so he can accomplish this goal.
+
 ## User Stories
 
 ### User Story #1 - written by Jared
@@ -67,6 +70,12 @@ This year Dan is looking for an easy to use software he can provide on his parks
 
 ### User Story #5 (Katie, group user) - written by Carter Kieke
 After picking up a bit of a reading habit, Katie is exploring options outside her career to spend her freetime. Katie spends most of her time at the library but would like to discuss her reading habits online and outside of her work group. Katie uses the group-find application and enables filters for entertainment groups and sets reading as one of her interests. Katie is then able to browse and find people in a similar age-range that enjoy reading the same genres and authors she does. Katie evaluates the public profiles provided and sends friend requests to multiple users she would like to form a bookclub with. Katie is able to add several friends and create her own bookclub group that she then can organize and message members through the group-finder application.
+
+### User Story #6 (Matt, group user) - written by Austin Dougherty
+Matt recently found a new game that he feels he could become really good at called Rainbow Six: Siege. None of his friends want this game so he logs on to the group-find application to look for people to play with. He scrolls through the list of people that also play Siege and chooses the people he feels can help him become a good player. He finds enough people to get a full squad together and are able to play a lot over the day. Matt sends friend requests through the group-find application so he can find them and play with them again. 
+
+### User Story #7 (Dan, event organizer) - written by Austin Dougherty
+Dan is looking for new events to put on during the summer for the parks department. To get an idea of what people may be interested in, he goes the the group-find application and searches through users that are online and what interests are shown on their profiles. Using this Dan comes up with a few ideas for the summer that should cover a wide variety of interests for a lot of people.
 
 ## Use Case Diagrams
 
