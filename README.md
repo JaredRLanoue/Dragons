@@ -25,7 +25,7 @@ Our software application is a group organization software, it will be able to cr
 ### Usage
 1. Navigate to the `Groupify/Groupify-Project` folder using the terminal
 2. Start the sever using the following command: `python3 manage.py runserver`
-3. Jump to the browser and enter `https://localhost:8000` to access our main page running on the server
+3. Jump to the browser and enter `http://localhost:8000` to access our main page running on the server
 
 ## Stakeholders and their Interests
 
