@@ -12,15 +12,20 @@ This application is applicable to groups and events, it is also usable by other 
 Our software application is a group organization software, it will be able to create available queue times and organize estimated groups, sizes and schedules for virtual and live events.
 
 ## Getting Started
-PreReq: Have a version of Python downloaded. (3.6 or later)
-To open in Windows cmd prompt:
-1) Create virtual environment by using command: py -m venv (name of environment)
-2) Activate new virtual environment using command: (name of enviro)\Scripts\activate.bat
-3) Install django package using command: pip install django
-4) Navigate to the environment directory
-5) Start django project by using command: django-admin startproject (project_name) and navigate to that new directory
-6) Start up the server using command: py manage.py runserver
-7) Jump to browser and enter localhost.8000/ to get to Django's main page
+
+### Requirements   
+- A version of Python downloaded (3.6 or later)
+- Pip (a Python package manager)
+
+### Installation
+1. Clone the repository using the following command: `git clone https://github.com/JaredRLanoue/Groupify.git`
+2. Navigate to the newly cloned `Groupify` folder using the terminal
+3. Install all the project dependencies using the following pip command: `pip install -r requirements.txt`
+
+### Usage
+1. Navigate to the `Groupify/Groupify-Project` folder using the terminal
+2. Start the sever using the following command: `python3 manage.py runserver`
+3. Jump to the browser and enter `https://localhost:8000` to access our main page running on the server
 
 ## Stakeholders and their Interests
 
@@ -93,7 +98,7 @@ Dan is looking for new events to put on during the summer for the parks departme
 
 ## Use Case Diagram
 
-![Use Case Diagram](./images/UseCaseDiagram.png "Use Case Diagram")
+![Use Case Diagram](Images/UseCaseDiagram.png "Use Case Diagram")
 
 ## Requirements
 
