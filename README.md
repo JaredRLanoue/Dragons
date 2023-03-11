@@ -11,6 +11,17 @@ Carter Kieke - CJKek
 This application is applicable to groups and events, it is also usable by other types of businesses and online message boards. The application provides easy access to tools allowing participants to view and request events that best fit their profile and schedule.
 Our software application is a group organization software, it will be able to create available queue times and organize estimated groups, sizes and schedules for virtual and live events.
 
+## Getting Started
+PreReq: Have a version of Python downloaded. (3.6 or later)
+To open in Windows cmd prompt:
+1) Create virtual environment by using command: py -m venv (name of environment)
+2) Activate new virtual environment using command: (name of enviro)\Scripts\activate.bat
+3) Install django package using command: pip install django
+4) Navigate to the environment directory
+5) Start django project by using command: django-admin startproject (project_name) and navigate to that new directory
+6) Start up the server using command: py manage.py runserver
+7) Jump to browser and enter localhost.8000/ to get to Django's main page
+
 ## Stakeholders and their Interests
 
 ### Users
