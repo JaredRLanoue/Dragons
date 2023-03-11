@@ -98,7 +98,7 @@ Dan is looking for new events to put on during the summer for the parks departme
 
 ## Use Case Diagram
 
-![Use Case Diagram](./images/UseCaseDiagram.png "Use Case Diagram")
+![Use Case Diagram](Images/UseCaseDiagram.png "Use Case Diagram")
 
 ## Requirements
 
