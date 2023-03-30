@@ -1,0 +1,9 @@
+FROM postgres:12.5
+
+ENV POSTGRES_USER=user
+ENV POSTGRES_PASSWORD=password
+ENV POSTGRES_DB=groupify_db
+
+EXPOSE 5432
+
+CMD ["postgres"]
