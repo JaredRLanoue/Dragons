@@ -37,7 +37,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'rest_framework'
+    'rest_framework',
+    'Groupify'
 ]
 
 MIDDLEWARE = [
@@ -76,8 +77,8 @@ WSGI_APPLICATION = 'Groupify.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'groupify-db',
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'groupify_db',
         'USER': 'user',
         'PASSWORD': 'password',
         'HOST': 'localhost',
