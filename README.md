@@ -19,13 +19,21 @@ Our software application is a group organization software, it will be able to cr
 
 ### Installation
 1. Clone the repository using the following command: `git clone https://github.com/JaredRLanoue/Groupify.git`
-2. Navigate to the newly cloned `Groupify` folder using the terminal
+2. Navigate to the `Groupify/Groupify-Project` folder using the terminal
 3. Install all the project dependencies using the following pip command: `pip install -r requirements.txt`
 
 ### Usage
 1. Navigate to the `Groupify/Groupify-Project` folder using the terminal
-2. Start the sever using the following command: `python3 manage.py runserver`
+2. Start the sever using the following command: `python3 manage.py runserver` (or just `python`, depends on your version downloaded)
 3. Jump to the browser and enter `http://localhost:8000` to access our main page running on the server
+
+### Making Migrations
+1. Ensure docker is running by following the walkthrough found [here](https://github.com/JaredRLanoue/Groupify/wiki/Docker-PostgreSQL-Database-Setup).
+2. Navigate to the `Groupify/Groupify-Project` folder using the terminal
+3. Run the following command to create a new migration based on changes to your models: `python3 manage.py makemigrations` (or just `python`, depends on your version downloaded). This will generate a new migration file in `Groupify/Groupify-Project/migrations`. The migration file contains instructions for Django on how to update your database schema to match your updated models.
+4. Apply the new migration to your database by running the following command: `python3 manage.py migrate` (or just `python`, depends on your version downloaded). This will execute the instructions in the migration file and update your database schema accordingly.
+
+It's important to run these commands everytime you make changes to your models to ensure the database is reflecting your changes and everything is up-to-date. This is how we update the database with tables/fields which all comes from the defined models in the models.py file.
 
 ## Stakeholders and their Interests
 

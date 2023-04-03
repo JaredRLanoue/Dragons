@@ -1,17 +1,18 @@
+from django.contrib.auth.models import AbstractUser, Group, Permission
 from django.db import models
-from django.contrib.auth.models import AbstractUser
-from django.contrib.auth.models import get_user_model
 
 #Custom user model using Django's AbstractUser model, parameters subject to change
+#Firstname and Lastname already exist within AbstractUser, so no need to define them here
 class User(AbstractUser):
-    firstName = models.CharField(max_length=30, blank=True)
-    lastName = models.CharField(max_length=30, blank=True)
-    email = models.EmailField(max_length=254, unique=True)
-    groups = models.ManyToManyField('auth.Group', blank=True, related_name="user_set")
+    email = models.EmailField()
+    groups = models.ManyToManyField(Group, blank=True, related_name="group_members")
+    user_permissions = models.ManyToManyField(Permission, blank=True, related_name='groupify_user_permissions')
 
-User = get_user_model()
+    def __str__(self):
+        return self.email
 
-#Custom group model using Django again, including the user model created above as the user type field
+
+# Custom group model using Django again, including the user model created above as the user type field
 class Group(models.Model):
     title = models.CharField(max_length=100)
     description = models.TextField()
@@ -19,7 +20,7 @@ class Group(models.Model):
     category = models.CharField(max_length=50)
     creator = models.ForeignKey(User, on_delete=models.CASCADE, related_name='groups_created')
     admins = models.ManyToManyField(User, related_name='groups_administered')
-    users = models.ManyToManyField(User, related_name='groups_joined')
+    members = models.ManyToManyField(User, related_name='groups_joined')
 
     def __str__(self):
         return self.title
