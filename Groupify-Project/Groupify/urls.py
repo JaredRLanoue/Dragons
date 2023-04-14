@@ -15,16 +15,13 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from django.views.generic import RedirectView
+
+from .views import *
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
-]
-
-from django.urls import path
-from yourapp.views import remove_user_from_group, get_group_by_id
-
-urlpatterns = [
-    path('groups/<int:group_id>/', get_group_by_id, name='get_group_by_id'),
-    path('groups/<int:group_id>/remove-user/', remove_user_from_group, name='remove_user_from_group'),
+    path('', home),
+    path('groups/<int:group_id>/', get_group_by_id),
+    path('groups/<int:group_id>/remove-user/', remove_user_from_group),
 ]
 
