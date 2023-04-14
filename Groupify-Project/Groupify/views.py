@@ -1,6 +1,8 @@
 from django.http import JsonResponse
+from django.shortcuts import render
 from django.views.decorators.csrf import csrf_exempt
-from yourapp.models import Group
+from .models import Group, User
+
 
 @csrf_exempt
 def remove_user_from_group(request, group_id):
@@ -27,3 +29,20 @@ def remove_user_from_group(request, group_id):
 
     else:
         return JsonResponse({'error': 'Invalid request method'}, status=405)
+
+
+def get_group_by_id(request, group_id):
+    try:
+        group = Group.objects.get(id=group_id)
+    except Group.DoesNotExist:
+        return JsonResponse({'error': 'Group not found'}, status=404)
+
+    return JsonResponse({
+        'id': group.id,
+        'name': group.name,
+        'users': [{'id': user.id, 'name': user.name} for user in group.users.all()]
+    })
+
+
+def home(request):
+    return render(request, 'Welcome.html')
