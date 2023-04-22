@@ -1,10 +1,10 @@
 # views.py
 
 from django.http import JsonResponse
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from django.views.decorators.csrf import csrf_exempt
+from django.contrib.auth import authenticate, login, logout
 from .models import Group, User
-
 
 @csrf_exempt
 def remove_user_from_group(request, group_id):
@@ -46,6 +46,26 @@ def update_group(request, group_id):
 
     else:
         return JsonResponse({'error': 'Invalid request method'}, status=405)
+
+
+def login_view(request):
+    if request.method == 'POST':
+        username = request.POST['username']
+        password = request.POST['password']
+        user = authenticate(request, username=username, password=password)
+        if user is not None:
+            login(request, user)
+            return redirect('home')
+        else:
+            # Return an 'invalid login' error message.
+            return render(request, 'login.html', {'error_message': 'Invalid username or password.'})
+    else:
+        return render(request, 'login.html')
+
+
+def logout_view(request):
+    logout(request)
+    return redirect('login')
 
 
 def home(request):
