@@ -17,13 +17,17 @@ from django.contrib import admin
 from django.urls import path
 from django.views.generic import RedirectView
 
-from .views import *
+from . import views
 
 urlpatterns = [
-    path('', home),
-    path('groups/<int:group_id>/', get_group_by_id),
-    path('groups/<int:group_id>/remove-user/', remove_user_from_group),
+    path('', views.home, name='home'),
+    path('groups/<int:group_id>/', views.get_group_by_id, name='get_group_by_id'),
+    path('groups/<int:group_id>/remove-user/', views.remove_user_from_group, name='remove_user_from_group'),
     path('groups/', views.get_all_groups, name='get_all_groups'),
-    path('group/<int:group_id>/add_user/', views.add_user_to_group, name='add_user_to_group'),
+    path('group/<int:group_id>/add-user/', views.add_user_to_group, name='add_user_to_group'),
+    path('group/<int:group_id>/update/', views.update_group, name='update_group'),
+    path('login/', views.login_view, name='login'),
+    path('logout/', views.logout_view, name='logout'),
+    path('admin/', admin.site.urls),
 ]
 
