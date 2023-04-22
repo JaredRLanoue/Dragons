@@ -54,21 +54,45 @@
 	</style>
 </head>
 <body>
-	<h2>Groupify Login</h2>
-	<form>
-		<div class="container">
-			<label for="username"><b>Username</b></label>
-			<input type="text" placeholder="Enter Username" name="username" required>
+	<!-- Navigation Bar -->
+	<nav>
+		<ul>
+			<li><a href="/">Home</a></li>
+			<li><a href="/about">About</a></li>
+			<li><a href="/contact">Contact</a></li>
+			{% if user.is_authenticated %}
+				<li><a href="/logout">Logout</a></li>
+			{% else %}
+				<li><a href="/login">Login</a></li>
+				<li><a href="/register">Register</a></li>
+			{% endif %}
+		</ul>
+	</nav>
 
-			<label for="password"><b>Password</b></label>
-			<input type="password" placeholder="Enter Password" name="password" required>
+	{% if user.is_authenticated %}
+		<p>Welcome, {{ user.username }}!</p>
+	{% else %}
+		<h2>Groupify Login</h2>
+		<form method="post">
+			{% csrf_token %}
+			<div class="container">
+				<label for="username"><b>Username</b></label>
+				<input type="text" placeholder="Enter Username" name="username" required>
 
-			<button type="submit">Login</button>
+				<label for="password"><b>Password</b></label>
+				<input type="password" placeholder="Enter Password" name="password" required>
 
-			<div>
-				Don't have an account? <a href="#">Register Here</a>
+				<button type="submit">Login</button>
+
+				<div>
+					Don't have an account? <a href="/register">Register Here</a>
+				</div>
 			</div>
-		</div>
-	</form>
+		</form>
+	{% endif %}
+
+	<!-- Main Content -->
+	<h1>Welcome to Groupify!</h1>
+	<p>Groupify is a web application that helps you manage your groups and events.</p>
 </body>
 </html>
