@@ -6,6 +6,7 @@ from django.views.decorators.csrf import csrf_exempt
 from django.contrib.auth import authenticate, login, logout
 from .models import Group, User
 
+
 @csrf_exempt
 def remove_user_from_group(request, group_id):
     # ... existing code for removing a user from a group ...
@@ -57,7 +58,6 @@ def login_view(request):
             login(request, user)
             return redirect('home')
         else:
-            # Return an 'invalid login' error message.
             return render(request, 'login.html', {'error_message': 'Invalid username or password.'})
     else:
         return render(request, 'login.html')
@@ -69,4 +69,8 @@ def logout_view(request):
 
 
 def home(request):
-    return render(request, 'Welcome.html')
+    if request.user.is_authenticated:
+        return render(request, 'home.html', {'user': request.user})
+    else:
+        return render(request, 'Welcome.html')
+
