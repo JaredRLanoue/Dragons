@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Create Groupify Group</title>
+    <style>
+        body {
+            background-color: #7433FF;
+            font-family: Arial, sans-serif;
+        }
+
+        h2 {
+            text-align: center;
+            margin-top: 50px;
+            color: white;
+        }
+
+        form {
+            border: 1px solid #ccc;
+            background-color: #fff;
+            padding: 20px;
+            margin: auto;
+            width: 400px;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        input[type=text], input[type=password] {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #3F33F9;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        select {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        button:hover {
+            background-color: #2012F9;
+        }
+
+        .container {
+            padding: 16px;
+        }
+    </style>
+</head>
+<body>
+<h2>Create Group</h2>
+<form method="post">
+     {% csrf_token %}
+    <div class="container">
+        <label for="title"><b>Title</b></label>
+        <input type="text" placeholder="Enter group title" name="title" required>
+
+        <label for="description"><b>Description</b></label>
+        <input type="text" placeholder="Enter group description" name="description" required>
+
+        <label for="visibility"><b>Visibility</b></label>
+        <select name="visibility" required>
+            <option value="public">Public</option>
+            <option value="private">Private</option>
+        </select><br>
+
+        <label for="category"><b>Category</b></label>
+        <input type="text" placeholder="Enter group category" name="category" required>
+        <div>
+            <a href="{% url 'home_view' %}">Back to Home</a>
+            <button type="submit">Create Group</button>
+        </div>
+    </div>
+</form>
+
+</body>
+</html>

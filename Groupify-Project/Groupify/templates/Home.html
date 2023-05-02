@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Group Information Page</title>
+    <style>
+        body {
+            background-color: #7433FF;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 50px;
+            color: white;
+        }
+
+        .container {
+            max-width: 700px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #FFFFFF;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            overflow-y: scroll;
+            max-height: 1000px;
+        }
+
+        .group {
+            background-color: #f7f7f7;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            text-align: left;
+        }
+
+        .group h3 {
+            text-align: center;
+        }
+
+        .group p {
+            text-align: left;
+        }
+
+        .group p:first-child {
+            margin-bottom: 5px;
+        }
+
+        .group:nth-child(even) {
+            background-color: #ededed;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 1.5;
+            color: #666666;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            text-align: left;
+        }
+
+        li {
+            font-size: 14px;
+            line-height: 1.5;
+            color: #666666;
+            margin-bottom: 5px;
+        }
+
+        .bold {
+            font-weight: bold;
+        }
+
+        a {
+            color: #7433FF;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+<h1>Home</h1>
+{% if user.is_authenticated %}
+<div class="container">
+    <p class="bold">Hello {{ user.username }}!</p>
+    {% if groups %}
+    {% for group in groups %}
+    <div class="group">
+        <a href="{% url 'group_details' group.id %}">
+            <h3>{{ group.title }}</h3>
+        </a>
+        <p>Description: {{ group.description }}</p>
+        <p>Category: {{ group.category }}</p>
+    </div>
+    {% endfor %}
+    {% else %}
+    <p>No groups found.</p>
+    {% endif %}
+    <a href="{% url 'create_group' %}">Create a Group</a>
+    <span>|</span>
+    <a href="{% url 'logout' %}">Logout</a>
+</div>
+{% endif %}
+</body>
+</html>
