@@ -16,18 +16,26 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from django.views.generic import RedirectView
+from django.contrib.auth import views as auth_views
 
-from . import views
+from .views import *
 
 urlpatterns = [
-    path('', views.home, name='home'),
-    path('groups/<int:group_id>/', views.get_group_by_id, name='get_group_by_id'),
-    path('groups/<int:group_id>/remove-user/', views.remove_user_from_group, name='remove_user_from_group'),
-    path('groups/', views.get_all_groups, name='get_all_groups'),
-    path('group/<int:group_id>/add-user/', views.add_user_to_group, name='add_user_to_group'),
-    path('group/<int:group_id>/update/', views.update_group, name='update_group'),
-    path('login/', views.login_view, name='login'),
-    path('logout/', views.logout_view, name='logout'),
-    path('admin/', admin.site.urls),
+    path('', welcome_view, name='home'),
+    path("register/", register_view, name="register"),
+    path("login/", CustomLoginView.as_view(), name="login"),
+    path('home/', home_view, name='home_view'),
+    path('logout/', auth_views.LogoutView.as_view(next_page='login'), name='logout'),
+    path('create_group/', create_group_view, name='create_group'),
+    path('group_details/<int:group_id>/', group_details, name='group_details'),
+
+    # path('groups/<int:group_id>/', get_group_by_id, name='get_group_by_id'),
+    # path('groups/<int:group_id>/remove-user/', remove_user_from_group, name='remove_user_from_group'),
+    # path('groups/', get_all_groups, name='get_all_groups'),
+    # path('group/<int:group_id>/add-user/', add_user_to_group, name='add_user_to_group'),
+    # path('group/<int:group_id>/update/', update_group, name='update_group'),
+    # path('login/', login_view, name='login'),
+    # path('logout/', logout_view, name='logout'),
+    # path('admin/', admin.site.urls),
 ]
 
