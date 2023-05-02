@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Group Information Page</title>
+    <style>
+        body {
+            background-color: #7433FF;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+    h1 {
+        text-align: center;
+        margin-top: 50px;
+        color: white;
+    }
+
+    .container {
+        max-width: 800px;
+        margin: 50px auto;
+        padding: 20px;
+        background-color: #FFFFFF;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        text-align: center;
+    }
+
+    p {
+        font-size: 18px;
+        line-height: 1.5;
+        color: #666666;
+    }
+
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        text-align: left;
+    }
+
+    li {
+        font-size: 16px;
+        line-height: 1.5;
+        color: #666666;
+        margin-bottom: 10px;
+    }
+
+    .bold {
+        font-weight: bold;
+    }
+</style>
+</head>
+<body>
+<h1>Group Information</h1>
+<body>
+<div class="container">
+    <ul>
+        <li><span class="bold">Group Name:</span> {{ group.title }}</li>
+        <li><span class="bold">Group Description:</span> {{ group.description }}</li>
+        <li><span class="bold">Group Visibility:</span> {{ group.visibility }}</li>
+        <li><span class="bold">Group Category:</span> {{ group.category }}</li>
+        <li><span class="bold">Creator:</span> {{ group.creator }}</li>
+        <li><span class="bold">Admins:</span> {% for admin in group.admins.all %}{{ admin.username }}, {% endfor %}</li>
+        <li><span class="bold">Members:</span> {{ group.members.count }}</li>
+<!--        <button>Join Group</button>-->
+<!--        <button>View Member List</button>-->
+<!--        <br />-->
+        <br />
+        <a href="{% url 'home_view' %}">Return Home</a>
+<!--        <a href="{% url 'group_details' group.id %}">Group View Page</a>-->
+    </ul>
+</div>
+</body>
+</body>
+</html>
